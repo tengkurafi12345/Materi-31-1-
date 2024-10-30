@@ -1,0 +1,15 @@
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  padding: 18px;
+  transition: background-color 0.3s ease;
+}
+.panel1 {
+  padding: 0 15px;
+  background-color: #fff;
+  overflow: none;
+}

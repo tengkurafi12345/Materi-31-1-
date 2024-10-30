@@ -1,0 +1,22 @@
+append adalah nambah string dan juga menggabungkan string baru
+
+add adalah 
+
+javascript kalkulator, membaca bagaimana tau angka pertama dan angka kedua adalah operatornya
+innerText
+css 
+
+translate: menggeser
+rotate: rotasi
+
+MU update, simpan
+MC Memory Clear
+MR Memory Recall
+M- 
+M+ Memory Plus
+
+for each (looping masing masing anggota)panjangnya berapa partnya berapa finishnya dimana
+
+let itu nilainya bisa berubah ubah, const itu tetap
+
+cara penulisan camel case berurut

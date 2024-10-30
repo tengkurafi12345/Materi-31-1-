@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //cara 1
+      const laptop = {
+        brand: "lenovo",
+        processor: "intel core i7",
+        monitor: "14 inch",
+        weight: "1.5 kg",
+      };
+
+      //cara 2
+      const pasangan = {};
+      pasangan.gender = "female";
+      pasangan.skin_color = "white";
+      pasangan.height = "165 cm";
+      pasangan.weight = "60 kg";
+      pasangan.origin = "NTT";
+
+      //cara 3
+      const husband = new Object();
+      husband.salary = "7000000";
+      husband.loyality = "monogami";
+      husband.car = "HRV";
+      husband.look = "Like Mr Vino";
+      husband.heart = "very kind";
+
+      const introduce = {
+        firstname: "muhammad",
+        lastname: "ali",
+        id: 55555,
+        fullname: function () {
+          return this.firstname + " " + this.lastname;
+        },
+      };
+
+      const mobil = {
+        brand: "toyota",
+        year: 2018,
+        price: {
+          avanza: "239.000.000",
+          calya: "250.000.000",
+          agya: "260.000.000",
+        },
+      };
+
+      //looping
+      let myType = "";
+      for (let data in pasangan) {
+        myType += pasangan[data] + " ";
+      }
+
+      //obj to array
+      const pendamping = Object.values(pasangan);
+
+      //obt to array assosiatif
+      let myHusband = "";
+      const suami = Object.entries(husband);
+      for (let [keyword, value] of Object.entries(husband)) {
+        myHusband += keyword + " : " + value + "<br>";
+      }
+
+      //obj to string
+      let myLaptop = JSON.stringify(laptop);
+
+      const cart = new Array();
+      cart[0] = { product: "teh pucuk" };
+
+      document.write(cart[0].product);
+    </script>
+  </body>
+</html>

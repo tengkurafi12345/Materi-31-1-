@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="waktu"></h1>
+    <script>
+        const waktu=document.getElementById("waktu");
+        const months = ["januari",  "februari" , "maret" ,"april", "mei" , "juni", "juli" , "agustus" , "september" , "oktober" , "november" , "desember"]; 
+        const days=["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"];
+        let now=new Date();
+        let time=new Date("2021-03-25")
+        waktu.innerHTML=time.getFullYear();
+    </script>
+</body>
+</html>

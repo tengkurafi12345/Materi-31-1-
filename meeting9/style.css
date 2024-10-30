@@ -1,0 +1,13 @@
+body{
+    background-color: blueviolet;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+#waktu{
+    color: lightcyan;
+    
+}

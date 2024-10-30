@@ -1,0 +1,190 @@
+/* * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #66b9ed;
+  }
+  h1 {
+    text-align: center;
+  }
+  .wrapper {
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    background-color: #fff;
+    padding: 15px;
+  }
+  #display {
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    text-align: end;
+    margin-bottom: 15px;
+  }
+  button {
+    width: 60px;
+    height: 70px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button:hover {
+    font-size: 24px;
+  } */
+
+
+
+
+  /* box-sizing: border-box;
+}
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(10, 10, 190, 0.6);
+
+}
+.h1{
+    text-align: center;
+    color: aqua;
+}
+.wrapper{
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    width: fit-content;
+    width: 20em;
+    padding: 15px;
+}
+#display{
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    text-align: end;
+    margin-bottom: 15px;
+}
+.button{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{
+    font-size: 24px;
+} */ */
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+}
+.wrapper {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgb(0, 6, 94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 20px;
+  border: 3px solid red;
+}
+
+#display {
+  color: rgb(0, 177, 221);
+  border-radius: 10px;
+  border: 3px solid rgb(255, 255, 255);
+  width: 100%;
+  background-color: rgb(102, 102, 102);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: end;
+  font-size: 2em;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: rgb(255, 0, 255);
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+  margin: 0;
+  /* justify-content: center; */
+}
+
+tr {
+  margin: auto;
+  width: 100%;
+}
+
+.m {
+  margin: 2px;
+  width: 100%;
+  height: 35px;
+}
+
+.mm {
+  margin: 2px;
+  width: 100%;
+  height: 35px;
+}
+
+.numeric {
+  background-color: black;
+  color: white;
+  padding: 25px;
+  margin: 2px;
+  /* width: 75px; */
+  width: 100%;
+}
+
+.operatormir {
+  background-color: white;
+  color: black;
+  padding: 25px;
+  margin: 2px;
+  width: 100%;
+}
+
+.operator {
+  background-color: white;
+  /* color: black; */
+  padding: 25px 0;
+  /* width: 61px; */
+  width: 220%;
+  margin: 2px;
+}
+
+

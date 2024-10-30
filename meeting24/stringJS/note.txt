@@ -1,0 +1,8 @@
+ASCII=setiap perusahaan bisa membuat komputernya sendiri
+
+
+
+
+Make a password generator
+5W 1H
+panjang password tidak boleh kurang dari yang di centang

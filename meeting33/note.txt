@@ -1,0 +1,11 @@
+Accordion Javascript
+1. for itu untuk mengulangi apa yang kita ingin ulangi,
+biasanya sebuah kumpulan data atau array itu yang fungsinya sama bisa dibuat total 1 dengan dia
+
+  UTF = memunculkan karakter dengan kombinasi huruf dan angka
+1. ::after = psuedo element
+2. style.css 
+3. content: ---;
+4. active = sedang di klik
+5. overflow = kelebihan/tidak sesuai dengan framenya
+6. class itu bisa dikelompokkan

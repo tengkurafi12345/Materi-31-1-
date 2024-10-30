@@ -1,0 +1,64 @@
+body {
+  height: 43rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #00ff5a;
+}
+
+.container {
+  width: 19em;
+  height: 27rem;
+  border-radius: 0.625rem;
+  opacity: 0.5;
+  background-color: #00b640;
+  box-shadow: 0.625rem 0.625rem 0.625rem black;
+}
+
+.header h2 {
+  font-family: "Lilita One", sans-serif;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  color: black;
+  padding: 0 0.625rem;
+}
+
+.form {
+  padding: 0.625rem 1.25rem;
+}
+
+.form-control,
+.form-control1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.625rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  margin-top: 0.6rem;
+  width: 96%;
+  padding: 0.3rem;
+  font-weight: bold;
+}
+
+button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 1.25rem;
+  color: #00b640;
+  cursor: pointer;
+  transition: 0.8s;
+  margin-top: 1.25rem;
+}
+
+button:hover {
+  background-color: #00b640;
+  color: white;
+}

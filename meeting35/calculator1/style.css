@@ -1,0 +1,12 @@
+.operator{
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.numeric{
+    font-size: 18px;
+}
+.output{
+    font-size: 18px
+}

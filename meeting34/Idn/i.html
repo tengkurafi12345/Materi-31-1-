@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form id="frm1" action="/action_page.php" method="get">
+    Harga: <input type="text" name="fname" value="Harga"><br>
+    Margin: <input type="text" name="lname" value="Margin"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  
+  <p><i>Peteken dinggo mbalen i kuwi cah</i></p>
+  
+  <button onclick="myFunction()">balen o</button>
+  
+  <p id="demo"></p>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("frm1").method;
+    document.getElementById("demo").innerHTML = x;
+  }
+  </script>
+</body>
+</html>

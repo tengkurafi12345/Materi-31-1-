@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="open-button" onclick="openForm()">Open Form</button>
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <div class="container">
+            <h1>Login</h1>
+            </div>
+            <div class="container">
+                <div class="container">
+                    <label for="email"><b>Email</b></label>
+                </div>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+            <div class="container">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            <div class="container">
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

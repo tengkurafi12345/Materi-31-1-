@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    a::after {
+      content: "(" attr(href) ")";
+    }
+    .dead-link {
+      text-decoration: line-through;
+    }
+    .dead-link::after {
+      content: url();
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+    }
+    .boring-text::after {
+      content: "<-BORING";
+      color: red;
+    }
+    .exciting-text::after {
+      content: "<-EXCITING!";
+      color: green;
+      background-color: #ffba10;
+      border-color: black;
+      border-style: dotted;
+    }
+    .exciting-text {
+      background-color: #5bc8f7;
+    }
+    a[data-descr] {
+      position: relative;
+      text-decoration: underline;
+      color: #00f;
+      cursor: help;
+    }
+    a[data-descr]:hover::after,
+    a[data-descr]:focus::after {
+      content: attr(data-descr);
+      position: absolute;
+      left: 0;
+      top: 0;
+      min-width: 200px;
+      border: 1px #aaaaaa solid;
+      border-radius: 10px;
+      background-color: #ffffcc;
+      padding: 12px;
+      color: #000000;
+      font-size: 14px;
+      z-index: 1;
+    }
+  </style>
+  <body>
+    <p class="boring-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero?<a href="https://youtube.com/" data-descr="you can watch the video"></a></p>
+
+    <p class="exciting-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis aperiam, repellendus voluptatibus officiis commodi tenetur. <a href="" class="dead-link">read more</a></p>
+  </body>
+</html>

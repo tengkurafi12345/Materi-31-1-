@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <div class="container">
+            <header>
+                <nav class="navbar bg-primary">
+                    <div class="container-fluid">
+                        <p class="navbar-brand h1 mb-0 text-white" href="#">Password Generator!</a>
+                    </div>
+                </nav>
+            </header>
+            <main class="border border-primary">
+                <div class="container mt-1">
+
+                    <label for="password_length" class="form-label">Panjang Password (<span id="pwd_length_counter">6</span>) : </label>
+                    <input type="text" class=""   id="password_length" value="6">
+
+                    <label for="firstCheckbox" class="form-label">Isian Karakter Pastikan Centang salah satu : </label>
+                    <div class="form-check" id="firstCheckbox">
+                        <input class="form-check-input" type="checkbox" value="" id="capital_az_char">
+                        <label class="form-check-label" for="capital_az_char">
+                            A-Z
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="small_az_char">
+                        <label class="form-check-label" for="small_az_char">
+                            a - z
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="numeric">
+                        <label class="form-check-label" for="numeric">
+                            0 - 9
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="symbols">
+                        <label class="form-check-label" for="symbols">symbols</label>
+                    </div>                    
+                    <div class="mt-2 d-flex" style="gap: 6px;">
+                        <button type="button" class="btn btn-success" id="generate_password">Generate</button>
+                        <button type="button" class="btn btn-danger" id="clear_result">clear results</button>
+                    </div>
+
+                    <p class="form-label mt-3"> Hasil :</p>
+                    <p class="h3 bg-body-tertiary text-secondary p-2" id="result_password">empty</p>
+                
+                </div>
+            </main>
+        </div>
+        <!-- <script type="text/javascript">
+            const pwdLengthCounter = document.getElementById('pwd_length_counter');
+            const passwordLengthRange = document.getElementById('password_length');
+
+            passwordLengthRange.addEventListener('change', function (event) {
+                pwdLengthCounter.innerText = passwordLengthRange.value;
+            });
+
+            document.getElementById('clear_result').addEventListener('click', function (event) {
+                document.getElementById('result_password').innerText = '(empty)';
+            });
+
+        </script> -->
+        <script src="scripst.js"></script>
+  </body>
+</html>

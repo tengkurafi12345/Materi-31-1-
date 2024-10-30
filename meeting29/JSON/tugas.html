@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><input type="text" placeholder="item" id="iniItem" /></td>
+        <td><input type="text" placeholder="qty" id="qty" /></td>
+      </tr>
+      <tr>
+        <td><button id="btnInput">INPUT</button></td>
+      </tr>
+    </table>
+    <p id="invoice"></p>
+    <p id="totalBayar"></p>
+    RP
+    <input type="text" placeholder="payment" id="money" />
+    <button id="pay">BAYAR</button>
+    <button id="cancel">CANCEL</button>
+    <p id="pay_history"></p>
+    <p id="stock_item"></p>
+    <script>
+      const stock = {
+        minuman: [
+          {
+            nama: "teh pucuk",
+            jumlah: 100,
+            harga: 3500,
+          },
+          {
+            nama: "aqua",
+            jumlah: 80,
+            harga: 3000,
+          },
+          {
+            nama: "sprite",
+            jumlah: 40,
+            harga: 5000,
+          },
+          {
+            nama: "kratingdeng",
+            jumlah: 50,
+            harga: 6500,
+          },
+          {
+            nama: "Indomilk",
+            jumlah: 20,
+            harga: 5000,
+          },
+          {
+            nama: "c1000",
+            jumlah: 90,
+            harga: 10000,
+          },
+          {
+            nama: "Hilo",
+            jumlah: 66,
+            harga: 4000,
+          },
+          {
+            nama: "le mineral",
+            jumlah: 55,
+            harga: 4000,
+          },
+          {
+            nama: "Kopiko",
+            jumlah: 44,
+            harga: 2000,
+          },
+          {
+            nama: "Golda",
+            jumlah: 22,
+            harga: 300,
+          },
+        ],
+      };
+      const btnInput = document.getElementById("btnInput");
+      const btnPay = document.getElementById("pay");
+      const item = document.getElementById("iniItem");
+      const qty = document.getElementById("qty");
+      const invoice = document.getElementById("invoice");
+      const totalBayar = document.getElementById("totalBayar");
+      const payment = document.getElementById("pay");
+      const money = document.getElementById("money");
+      const payHistory = document.getElementById("pay_history");
+      const btnCancel = document.getElementById("cancel");
+      const stockItem = document.getElementById("stock_item");
+      let bayar = 0;
+
+      btnInput.addEventListener("click", function () {
+        var input_val = item.value;
+        var qty_val = qty.value;
+        const cart = new Array();
+        const total = 0;
+        var flag = false;
+
+        for (let i = 0; i < 10; i++) {
+          if (input_val == stock.minuman[i].nama) {
+            if (qty_val <= stock.minuman[i].jumlah) {
+              cart[i] = {
+                product: input_val,
+                qty: qty_val,
+                price: stock.minuman[i].harga,
+                totalPrice: qty_val * stock.minuman[i].harga,
+              };
+              item.value = "";
+              qty.value = "";
+              invoice.innerHTML += cart[i].product + " : " + cart[i].price + " x " + cart[i].qty + " -> Rp " + cart[i].totalPrice + "<br>";
+              bayar += cart[i].totalPrice;
+              totalBayar.innerHTML = "Rp" + bayar;
+              break;
+            } else {
+              window.alert("Insufficient stock item");
+            }
+          }
+        }
+        payment.addEventListener("click", function () {
+          var money_val = money.value;
+          if (money_val >= bayar) {
+            var change = money_val - bayar;
+            payHistory.innerHTML = " Total Payment : RP" + bayar + "<br>" + "Money : RP" + money.value + "<br>" + "Change : RP" + change;
+            bayar = 0;
+            money.value = "";
+          } else {
+            window.alert("Insufficient money");
+          }
+        });
+        btnCancel.addEventListener("click", function () {
+          invoice.innerHTML = "";
+          totalBayar.innerHTML = "";
+          payHistory.innerHTML = "";
+          bayar = 0;
+          money.value = "";
+          console.log(qty.value);
+        });
+
+        for (let i = 0; i < 10; i++) {
+          if (input_val == stock.minuman[i].nama) {
+            stock.minuman[i].jumlah -= qty_val;
+            stockItem.innerHTML = "Stock Item : " + stock.minuman[i].nama + " : " + stock.minuman[i].jumlah + "<br>";
+            break;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

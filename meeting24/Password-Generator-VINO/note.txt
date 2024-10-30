@@ -1,0 +1,30 @@
+Buat lah password generator dengan opsi A-Z,a-z,simbol,angka0-9|
+
+What mean of A-Z,a-z,simbol,angka 0-9
+- A-Z adalah abjad acak kapital dari A sampai Z
+- a-z adalah abjad acak kecil dari a sampai z
+-simbol random/acak yang akan menjadi hasil dari generator 
+-angka0-9 adalah opsi angka acak yang akan muncul
+
+Membuat fungsi generate password
+Mari kita ingat-ingat kembali fitur generate password yang dijelaskan di dalam spesifikasi sebelumnya. Di sana terdapat 
+
+opsi di mana pengguna bisa menggunakan huruf kapital dari A – Z,
+opsi di mana pengguna bisa menggunakan huruf kecil dari a – z, dan
+opsi di mana pengguna bisa menggunakan nomor 0 sampai 9.
+Nah, dari hal tersebut, bisa kita kumpulkan beberapa variabel yang digunakan untuk menentukan hasil dari generate password seperti berikut. 
+
+Panjang password -> passwordLength
+Bisa/tidak menggunakan huruf kapital dari A – Z -> useCapitalAToZ
+Bisa/tidak menggunakan huruf kecil dari a – z -> useLowerAToZ
+Bisa/tidak menggunakan nomor 0 sampai 9 -> useNumeric
+bisa/tidak menggunakan symbol acak -> menggunakan 
+
+
+Ketika panjang password yang diinputkan < 3, ia akan mengembalikan nilai (invalid)
+Ketika pengguna tidak mencentang ketiga hal berikut, aplikasi akan langsung mengembalikan nilai (invalid). 
+Opsi untuk pengguna bisa menggunakan huruf kapital dari A – Z.
+Opsi untuk pengguna bisa menggunakan huruf kecil dari a – z.
+Opsi untuk pengguna bisa menggunakan nomor 0 sampai 9.
+
+Math.random() untuk mengacak 

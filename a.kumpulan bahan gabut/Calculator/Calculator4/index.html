@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <h2>Kalkulator</h2>
+    <div class="calculator">
+      <!-- Display (Layar Kalkulator) -->
+      <input type="text" id="display" class="display" readonly />
+
+      <!-- Tombol Angka -->
+      <div class="buttons">
+        <button onclick="addToDisplay(1)">1</button>
+        <button onclick="addToDisplay(2)">2</button>
+        <button onclick="addToDisplay(3)">3</button>
+        <button onclick="addToDisplay(4)">4</button>
+        <button onclick="addToDisplay(5)">5</button>
+        <button onclick="addToDisplay(6)">6</button>
+        <button onclick="addToDisplay(7)">7</button>
+        <button onclick="addToDisplay(8)">8</button>
+        <button onclick="addToDisplay(9)">9</button>
+        <button onclick="addToDisplay(0)">0</button>
+
+        <button onclick="clearDisplay()">C</button>
+
+        <!-- Tombol Set HPP, HJ, MRG -->
+        <button class="buttons-wide" onclick="setToInputField('hpp')">Set HPP</button>
+        <button class="buttons-wide" onclick="setToInputField('hj')">Set HJ</button>
+        <button class="buttons-wide" onclick="setToInputField('mrg')">Set MRG</button>
+      </div>
+
+      <!-- Kalkulator Margin, HJ, dan HPP -->
+      <form action="#" class="form-container">
+        <label for="hj">Harga Jual:</label>
+        <br />
+        <input type="" id="hj" />
+        <br />
+        <label for="hpp">Harga Pokok Produk:</label>
+        <input type="" id="hpp" />
+        <br />
+        <label for="mrg"> Margin:</label>
+        <br />
+        <input type="" id="mrg" />
+        <br /><br />
+        <button type="button" onclick="calculateMargin()">Hitung Margin</button>
+        <br />
+        <br />
+        <button type="button" onclick="calculateHargaJual()">Hitung Harga Jual</button>
+        <br />
+        <br />
+        <button type="button" onclick="calculateHargaPokok()">Hitung Harga Pokok Produk</button>
+        <br />
+        <p id="result"></p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
