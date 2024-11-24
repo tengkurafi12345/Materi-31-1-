@@ -17,7 +17,7 @@
     <form action="cek_login.php" method="POST">
         <table>
             <tr>
-                <td>Username</td>
+                <td>Username...</td>
                 <td>:</td>
                 <td><input type="text" name="username" placeholder="masukkan username"></td>
             </tr>
